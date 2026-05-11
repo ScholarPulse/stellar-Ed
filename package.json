@@ -1,0 +1,26 @@
+{
+  "name": "scholar-pulse",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "service": "node services/reward_service.js",
+    "contract:build": "stellar contract build",
+    "contract:deploy": "stellar contract deploy --wasm target/wasm32-unknown-unknown/release/scholar_pulse.wasm --network testnet"
+  },
+  "dependencies": {
+    "@drips-network/sdk": "^6.0.0",
+    "@stellar/freighter-api": "^2.0.0",
+    "@stellar/stellar-sdk": "^12.0.0",
+    "next": "14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
+}
